@@ -1,0 +1,13 @@
+<div>
+<h1> List of blogs</h1>
+<div *ngIf="blogs.length==0">
+    <p>Create your first blog</p>
+</div>
+<div *ngIf="blogs.length>0">
+<div *ngFor='let blog of blogs' id="list">
+    <div>{{blog.title}}</div><br/>
+    <div>{{blog.description}}</div><br/>
+    <div>{{blog.category}}</div><br/>
+</div>
+</div>
+</div>
